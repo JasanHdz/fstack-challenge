@@ -35,7 +35,7 @@ function UserProvider({ children }) {
   const email = useInputValue(getInitialState('email'))
   const phone = useInputValue(getInitialState('phone'))
 
-  const { error, loading, data } = useQuery(GET_USERS)
+  const { data } = useQuery(GET_USERS)
   useEffect(() => {
     if(data?.getAllUsers) {
       setUsers(data.getAllUsers)

@@ -35,7 +35,7 @@ const forms = [
 ]
 
 function Chat() {
-  const [createUser, user] = useMutation(CREATE_USER)
+  const [createUser] = useMutation(CREATE_USER)
   const {
     UIstep,
     handleStep,
@@ -115,6 +115,7 @@ function Chat() {
                 )}
                 </Transition>
               )
+              return <div style={{display: 'none'}}>hola</div>
             })}
           </TransitionGroup>
         </div>
